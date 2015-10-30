@@ -109,6 +109,7 @@
 		F76DB6F51BE39E02000E592E /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		F76DB6F71BE39E02000E592E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F76DB6F91BE39E02000E592E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F78A15F91BE3A12600DDD8C7 /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = Carthage/Build/iOS/Bond.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +147,7 @@
 		F76DB6A61BE39E01000E592E = {
 			isa = PBXGroup;
 			children = (
+				F78A15F91BE3A12600DDD8C7 /* Bond.framework */,
 				F76DB6B11BE39E01000E592E /* SwiftBondSample */,
 				F76DB6C61BE39E01000E592E /* SwiftBondSampleTests */,
 				F76DB6D11BE39E01000E592E /* SwiftBondSampleUITests */,
@@ -242,6 +244,7 @@
 				F76DB6AC1BE39E01000E592E /* Frameworks */,
 				F76DB6AD1BE39E01000E592E /* Resources */,
 				F76DB7031BE39E02000E592E /* Embed Watch Content */,
+				F78A15FB1BE3A1CE00DDD8C7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -417,6 +420,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F78A15FB1BE3A1CE00DDD8C7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F76DB6AB1BE39E01000E592E /* Sources */ = {
@@ -656,6 +675,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftBondSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shun.nakahara.SwiftBondSample;
@@ -667,6 +690,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftBondSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shun.nakahara.SwiftBondSample;
@@ -741,6 +768,7 @@
 				F76DB6FE1BE39E02000E592E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F76DB7001BE39E02000E592E /* Build configuration list for PBXNativeTarget "SwiftBondSample WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -749,6 +777,7 @@
 				F76DB7021BE39E02000E592E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F76DB7041BE39E02000E592E /* Build configuration list for PBXNativeTarget "SwiftBondSample" */ = {
 			isa = XCConfigurationList;
@@ -757,6 +786,7 @@
 				F76DB7061BE39E02000E592E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F76DB7071BE39E02000E592E /* Build configuration list for PBXNativeTarget "SwiftBondSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -765,6 +795,7 @@
 				F76DB7091BE39E02000E592E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F76DB70A1BE39E02000E592E /* Build configuration list for PBXNativeTarget "SwiftBondSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -773,6 +804,7 @@
 				F76DB70C1BE39E02000E592E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
