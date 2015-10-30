@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F76DB6B31BE39E01000E592E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB6B21BE39E01000E592E /* AppDelegate.swift */; };
+		F76DB6B51BE39E01000E592E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB6B41BE39E01000E592E /* ViewController.swift */; };
+		F76DB6B81BE39E01000E592E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76DB6B61BE39E01000E592E /* Main.storyboard */; };
+		F76DB6BA1BE39E01000E592E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76DB6B91BE39E01000E592E /* Assets.xcassets */; };
+		F76DB6BD1BE39E01000E592E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76DB6BB1BE39E01000E592E /* LaunchScreen.storyboard */; };
+		F76DB6C81BE39E01000E592E /* SwiftBondSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB6C71BE39E01000E592E /* SwiftBondSampleTests.swift */; };
+		F76DB6D31BE39E01000E592E /* SwiftBondSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB6D21BE39E01000E592E /* SwiftBondSampleUITests.swift */; };
+		F76DB6D81BE39E01000E592E /* SwiftBondSample WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F76DB6D71BE39E01000E592E /* SwiftBondSample WatchKit App.app */; };
+		F76DB6DE1BE39E01000E592E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76DB6DC1BE39E01000E592E /* Interface.storyboard */; };
+		F76DB6E01BE39E01000E592E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76DB6DF1BE39E01000E592E /* Assets.xcassets */; };
+		F76DB6E71BE39E02000E592E /* SwiftBondSample WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F76DB6E61BE39E02000E592E /* SwiftBondSample WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F76DB6EE1BE39E02000E592E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB6ED1BE39E02000E592E /* InterfaceController.swift */; };
+		F76DB6F01BE39E02000E592E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB6EF1BE39E02000E592E /* ExtensionDelegate.swift */; };
+		F76DB6F21BE39E02000E592E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB6F11BE39E02000E592E /* NotificationController.swift */; };
+		F76DB6F41BE39E02000E592E /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB6F31BE39E02000E592E /* GlanceController.swift */; };
+		F76DB6F61BE39E02000E592E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB6F51BE39E02000E592E /* ComplicationController.swift */; };
+		F76DB6F81BE39E02000E592E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76DB6F71BE39E02000E592E /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F76DB6C41BE39E01000E592E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F76DB6A71BE39E01000E592E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F76DB6AE1BE39E01000E592E;
+			remoteInfo = SwiftBondSample;
+		};
+		F76DB6CF1BE39E01000E592E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F76DB6A71BE39E01000E592E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F76DB6AE1BE39E01000E592E;
+			remoteInfo = SwiftBondSample;
+		};
+		F76DB6D91BE39E01000E592E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F76DB6A71BE39E01000E592E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F76DB6D61BE39E01000E592E;
+			remoteInfo = "SwiftBondSample WatchKit App";
+		};
+		F76DB6E81BE39E02000E592E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F76DB6A71BE39E01000E592E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F76DB6E51BE39E02000E592E;
+			remoteInfo = "SwiftBondSample WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F76DB6FF1BE39E02000E592E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F76DB6E71BE39E02000E592E /* SwiftBondSample WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DB7031BE39E02000E592E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F76DB6D81BE39E01000E592E /* SwiftBondSample WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F76DB6AF1BE39E01000E592E /* SwiftBondSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBondSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76DB6B21BE39E01000E592E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F76DB6B41BE39E01000E592E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F76DB6B71BE39E01000E592E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F76DB6B91BE39E01000E592E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F76DB6BC1BE39E01000E592E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F76DB6BE1BE39E01000E592E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76DB6C31BE39E01000E592E /* SwiftBondSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftBondSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76DB6C71BE39E01000E592E /* SwiftBondSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBondSampleTests.swift; sourceTree = "<group>"; };
+		F76DB6C91BE39E01000E592E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76DB6CE1BE39E01000E592E /* SwiftBondSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftBondSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76DB6D21BE39E01000E592E /* SwiftBondSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBondSampleUITests.swift; sourceTree = "<group>"; };
+		F76DB6D41BE39E01000E592E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76DB6D71BE39E01000E592E /* SwiftBondSample WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftBondSample WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76DB6DD1BE39E01000E592E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F76DB6DF1BE39E01000E592E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F76DB6E11BE39E01000E592E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76DB6E61BE39E02000E592E /* SwiftBondSample WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SwiftBondSample WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76DB6EC1BE39E02000E592E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F76DB6ED1BE39E02000E592E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F76DB6EF1BE39E02000E592E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F76DB6F11BE39E02000E592E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F76DB6F31BE39E02000E592E /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		F76DB6F51BE39E02000E592E /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F76DB6F71BE39E02000E592E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F76DB6F91BE39E02000E592E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F76DB6AC1BE39E01000E592E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DB6C01BE39E01000E592E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DB6CB1BE39E01000E592E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DB6E31BE39E02000E592E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F76DB6A61BE39E01000E592E = {
+			isa = PBXGroup;
+			children = (
+				F76DB6B11BE39E01000E592E /* SwiftBondSample */,
+				F76DB6C61BE39E01000E592E /* SwiftBondSampleTests */,
+				F76DB6D11BE39E01000E592E /* SwiftBondSampleUITests */,
+				F76DB6DB1BE39E01000E592E /* SwiftBondSample WatchKit App */,
+				F76DB6EA1BE39E02000E592E /* SwiftBondSample WatchKit Extension */,
+				F76DB6B01BE39E01000E592E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F76DB6B01BE39E01000E592E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB6AF1BE39E01000E592E /* SwiftBondSample.app */,
+				F76DB6C31BE39E01000E592E /* SwiftBondSampleTests.xctest */,
+				F76DB6CE1BE39E01000E592E /* SwiftBondSampleUITests.xctest */,
+				F76DB6D71BE39E01000E592E /* SwiftBondSample WatchKit App.app */,
+				F76DB6E61BE39E02000E592E /* SwiftBondSample WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F76DB6B11BE39E01000E592E /* SwiftBondSample */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB6B21BE39E01000E592E /* AppDelegate.swift */,
+				F76DB6B41BE39E01000E592E /* ViewController.swift */,
+				F76DB6B61BE39E01000E592E /* Main.storyboard */,
+				F76DB6B91BE39E01000E592E /* Assets.xcassets */,
+				F76DB6BB1BE39E01000E592E /* LaunchScreen.storyboard */,
+				F76DB6BE1BE39E01000E592E /* Info.plist */,
+			);
+			path = SwiftBondSample;
+			sourceTree = "<group>";
+		};
+		F76DB6C61BE39E01000E592E /* SwiftBondSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB6C71BE39E01000E592E /* SwiftBondSampleTests.swift */,
+				F76DB6C91BE39E01000E592E /* Info.plist */,
+			);
+			path = SwiftBondSampleTests;
+			sourceTree = "<group>";
+		};
+		F76DB6D11BE39E01000E592E /* SwiftBondSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB6D21BE39E01000E592E /* SwiftBondSampleUITests.swift */,
+				F76DB6D41BE39E01000E592E /* Info.plist */,
+			);
+			path = SwiftBondSampleUITests;
+			sourceTree = "<group>";
+		};
+		F76DB6DB1BE39E01000E592E /* SwiftBondSample WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB6DC1BE39E01000E592E /* Interface.storyboard */,
+				F76DB6DF1BE39E01000E592E /* Assets.xcassets */,
+				F76DB6E11BE39E01000E592E /* Info.plist */,
+			);
+			path = "SwiftBondSample WatchKit App";
+			sourceTree = "<group>";
+		};
+		F76DB6EA1BE39E02000E592E /* SwiftBondSample WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB6ED1BE39E02000E592E /* InterfaceController.swift */,
+				F76DB6EF1BE39E02000E592E /* ExtensionDelegate.swift */,
+				F76DB6F11BE39E02000E592E /* NotificationController.swift */,
+				F76DB6F31BE39E02000E592E /* GlanceController.swift */,
+				F76DB6F51BE39E02000E592E /* ComplicationController.swift */,
+				F76DB6F71BE39E02000E592E /* Assets.xcassets */,
+				F76DB6F91BE39E02000E592E /* Info.plist */,
+				F76DB6EB1BE39E02000E592E /* Supporting Files */,
+			);
+			path = "SwiftBondSample WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F76DB6EB1BE39E02000E592E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB6EC1BE39E02000E592E /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F76DB6AE1BE39E01000E592E /* SwiftBondSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76DB7041BE39E02000E592E /* Build configuration list for PBXNativeTarget "SwiftBondSample" */;
+			buildPhases = (
+				F76DB6AB1BE39E01000E592E /* Sources */,
+				F76DB6AC1BE39E01000E592E /* Frameworks */,
+				F76DB6AD1BE39E01000E592E /* Resources */,
+				F76DB7031BE39E02000E592E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F76DB6DA1BE39E01000E592E /* PBXTargetDependency */,
+			);
+			name = SwiftBondSample;
+			productName = SwiftBondSample;
+			productReference = F76DB6AF1BE39E01000E592E /* SwiftBondSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F76DB6C21BE39E01000E592E /* SwiftBondSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76DB7071BE39E02000E592E /* Build configuration list for PBXNativeTarget "SwiftBondSampleTests" */;
+			buildPhases = (
+				F76DB6BF1BE39E01000E592E /* Sources */,
+				F76DB6C01BE39E01000E592E /* Frameworks */,
+				F76DB6C11BE39E01000E592E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F76DB6C51BE39E01000E592E /* PBXTargetDependency */,
+			);
+			name = SwiftBondSampleTests;
+			productName = SwiftBondSampleTests;
+			productReference = F76DB6C31BE39E01000E592E /* SwiftBondSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F76DB6CD1BE39E01000E592E /* SwiftBondSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76DB70A1BE39E02000E592E /* Build configuration list for PBXNativeTarget "SwiftBondSampleUITests" */;
+			buildPhases = (
+				F76DB6CA1BE39E01000E592E /* Sources */,
+				F76DB6CB1BE39E01000E592E /* Frameworks */,
+				F76DB6CC1BE39E01000E592E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F76DB6D01BE39E01000E592E /* PBXTargetDependency */,
+			);
+			name = SwiftBondSampleUITests;
+			productName = SwiftBondSampleUITests;
+			productReference = F76DB6CE1BE39E01000E592E /* SwiftBondSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F76DB6D61BE39E01000E592E /* SwiftBondSample WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76DB7001BE39E02000E592E /* Build configuration list for PBXNativeTarget "SwiftBondSample WatchKit App" */;
+			buildPhases = (
+				F76DB6D51BE39E01000E592E /* Resources */,
+				F76DB6FF1BE39E02000E592E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F76DB6E91BE39E02000E592E /* PBXTargetDependency */,
+			);
+			name = "SwiftBondSample WatchKit App";
+			productName = "SwiftBondSample WatchKit App";
+			productReference = F76DB6D71BE39E01000E592E /* SwiftBondSample WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F76DB6E51BE39E02000E592E /* SwiftBondSample WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76DB6FC1BE39E02000E592E /* Build configuration list for PBXNativeTarget "SwiftBondSample WatchKit Extension" */;
+			buildPhases = (
+				F76DB6E21BE39E02000E592E /* Sources */,
+				F76DB6E31BE39E02000E592E /* Frameworks */,
+				F76DB6E41BE39E02000E592E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftBondSample WatchKit Extension";
+			productName = "SwiftBondSample WatchKit Extension";
+			productReference = F76DB6E61BE39E02000E592E /* SwiftBondSample WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F76DB6A71BE39E01000E592E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = NakaharaShun;
+				TargetAttributes = {
+					F76DB6AE1BE39E01000E592E = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					F76DB6C21BE39E01000E592E = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = F76DB6AE1BE39E01000E592E;
+					};
+					F76DB6CD1BE39E01000E592E = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = F76DB6AE1BE39E01000E592E;
+					};
+					F76DB6D61BE39E01000E592E = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					F76DB6E51BE39E02000E592E = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = F76DB6AA1BE39E01000E592E /* Build configuration list for PBXProject "SwiftBondSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F76DB6A61BE39E01000E592E;
+			productRefGroup = F76DB6B01BE39E01000E592E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F76DB6AE1BE39E01000E592E /* SwiftBondSample */,
+				F76DB6C21BE39E01000E592E /* SwiftBondSampleTests */,
+				F76DB6CD1BE39E01000E592E /* SwiftBondSampleUITests */,
+				F76DB6D61BE39E01000E592E /* SwiftBondSample WatchKit App */,
+				F76DB6E51BE39E02000E592E /* SwiftBondSample WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F76DB6AD1BE39E01000E592E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76DB6BD1BE39E01000E592E /* LaunchScreen.storyboard in Resources */,
+				F76DB6BA1BE39E01000E592E /* Assets.xcassets in Resources */,
+				F76DB6B81BE39E01000E592E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DB6C11BE39E01000E592E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DB6CC1BE39E01000E592E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DB6D51BE39E01000E592E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76DB6E01BE39E01000E592E /* Assets.xcassets in Resources */,
+				F76DB6DE1BE39E01000E592E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DB6E41BE39E02000E592E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76DB6F81BE39E02000E592E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F76DB6AB1BE39E01000E592E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76DB6B51BE39E01000E592E /* ViewController.swift in Sources */,
+				F76DB6B31BE39E01000E592E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DB6BF1BE39E01000E592E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76DB6C81BE39E01000E592E /* SwiftBondSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DB6CA1BE39E01000E592E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76DB6D31BE39E01000E592E /* SwiftBondSampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DB6E21BE39E02000E592E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76DB6F21BE39E02000E592E /* NotificationController.swift in Sources */,
+				F76DB6F01BE39E02000E592E /* ExtensionDelegate.swift in Sources */,
+				F76DB6F61BE39E02000E592E /* ComplicationController.swift in Sources */,
+				F76DB6EE1BE39E02000E592E /* InterfaceController.swift in Sources */,
+				F76DB6F41BE39E02000E592E /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F76DB6C51BE39E01000E592E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F76DB6AE1BE39E01000E592E /* SwiftBondSample */;
+			targetProxy = F76DB6C41BE39E01000E592E /* PBXContainerItemProxy */;
+		};
+		F76DB6D01BE39E01000E592E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F76DB6AE1BE39E01000E592E /* SwiftBondSample */;
+			targetProxy = F76DB6CF1BE39E01000E592E /* PBXContainerItemProxy */;
+		};
+		F76DB6DA1BE39E01000E592E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F76DB6D61BE39E01000E592E /* SwiftBondSample WatchKit App */;
+			targetProxy = F76DB6D91BE39E01000E592E /* PBXContainerItemProxy */;
+		};
+		F76DB6E91BE39E02000E592E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F76DB6E51BE39E02000E592E /* SwiftBondSample WatchKit Extension */;
+			targetProxy = F76DB6E81BE39E02000E592E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F76DB6B61BE39E01000E592E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76DB6B71BE39E01000E592E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F76DB6BB1BE39E01000E592E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76DB6BC1BE39E01000E592E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F76DB6DC1BE39E01000E592E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76DB6DD1BE39E01000E592E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F76DB6FA1BE39E02000E592E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F76DB6FB1BE39E02000E592E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F76DB6FD1BE39E02000E592E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "SwiftBondSample WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shun.nakahara.SwiftBondSample.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		F76DB6FE1BE39E02000E592E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "SwiftBondSample WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shun.nakahara.SwiftBondSample.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		F76DB7011BE39E02000E592E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = SwiftBondSample_WatchKit_Extension;
+				INFOPLIST_FILE = "SwiftBondSample WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = shun.nakahara.SwiftBondSample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		F76DB7021BE39E02000E592E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = SwiftBondSample_WatchKit_Extension;
+				INFOPLIST_FILE = "SwiftBondSample WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = shun.nakahara.SwiftBondSample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		F76DB7051BE39E02000E592E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftBondSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shun.nakahara.SwiftBondSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F76DB7061BE39E02000E592E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftBondSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shun.nakahara.SwiftBondSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F76DB7081BE39E02000E592E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwiftBondSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shun.nakahara.SwiftBondSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftBondSample.app/SwiftBondSample";
+			};
+			name = Debug;
+		};
+		F76DB7091BE39E02000E592E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwiftBondSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shun.nakahara.SwiftBondSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftBondSample.app/SwiftBondSample";
+			};
+			name = Release;
+		};
+		F76DB70B1BE39E02000E592E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwiftBondSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shun.nakahara.SwiftBondSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SwiftBondSample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F76DB70C1BE39E02000E592E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwiftBondSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shun.nakahara.SwiftBondSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SwiftBondSample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F76DB6AA1BE39E01000E592E /* Build configuration list for PBXProject "SwiftBondSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76DB6FA1BE39E02000E592E /* Debug */,
+				F76DB6FB1BE39E02000E592E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F76DB6FC1BE39E02000E592E /* Build configuration list for PBXNativeTarget "SwiftBondSample WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76DB6FD1BE39E02000E592E /* Debug */,
+				F76DB6FE1BE39E02000E592E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F76DB7001BE39E02000E592E /* Build configuration list for PBXNativeTarget "SwiftBondSample WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76DB7011BE39E02000E592E /* Debug */,
+				F76DB7021BE39E02000E592E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F76DB7041BE39E02000E592E /* Build configuration list for PBXNativeTarget "SwiftBondSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76DB7051BE39E02000E592E /* Debug */,
+				F76DB7061BE39E02000E592E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F76DB7071BE39E02000E592E /* Build configuration list for PBXNativeTarget "SwiftBondSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76DB7081BE39E02000E592E /* Debug */,
+				F76DB7091BE39E02000E592E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F76DB70A1BE39E02000E592E /* Build configuration list for PBXNativeTarget "SwiftBondSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76DB70B1BE39E02000E592E /* Debug */,
+				F76DB70C1BE39E02000E592E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F76DB6A71BE39E01000E592E /* Project object */;
+}
