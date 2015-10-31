@@ -18,6 +18,10 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var countUpButton: UIButton!
+    
+    @IBOutlet weak var countLabel: UILabel!
+    
     let loginModel: LoginViewModel = LoginViewModel()
     
     override func viewDidLoad() {
@@ -45,12 +49,23 @@ class LoginViewController: UIViewController {
                 break
             }
         }
-        
+
         loginButton.bnd_controlEvent.filter { (controlEvents: UIControlEvents) -> Bool in
             return controlEvents == UIControlEvents.TouchUpInside
             }.observeNew { (controlEvents: UIControlEvents) -> () in
                 self.loginModel.login()
         }
+        
+
+        loginModel.countString.bindTo(self.countLabel.bnd_text)
+        let includeEvent: UIControlEvents -> Bool = { (controlEvents: UIControlEvents) -> Bool in
+            return controlEvents == UIControlEvents.TouchUpInside
+        }
+        
+        let observer: UIControlEvents -> () = { (controlEvents: UIControlEvents) -> () in
+            self.loginModel.countUp()
+        }
+        countUpButton.bnd_controlEvent.filter(includeEvent).observeNew(observer)
         
     }
     

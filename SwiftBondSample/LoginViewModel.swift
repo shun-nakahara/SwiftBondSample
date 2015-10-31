@@ -21,6 +21,11 @@ class LoginViewModel {
     
     let loginStatus: Observable<LoginState> = Observable<LoginState>(.None)
     
+    
+    var count: Int = 0
+    let countString: Observable<String?> = Observable<String?>("")
+
+    
     private var loginInProgress: EventProducer<Bool> {
         return loginStatus.map({ (loginState: LoginState) -> Bool in
             return loginState == LoginState.InProgress
@@ -45,7 +50,7 @@ class LoginViewModel {
         }
     }
     
-    internal func login() {
+    func login() {
         self.loginStatus.value = .InProgress
 
         let delayTime: dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double(NSEC_PER_SEC)))
@@ -55,4 +60,8 @@ class LoginViewModel {
         })
     }
     
+    func countUp() {
+        self.count++
+        self.countString.value = "\(self.count)"
+    }
 }

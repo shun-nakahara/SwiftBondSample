@@ -70,11 +70,28 @@
                                 <animations/>
                                 <color key="color" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIv-vL-pbh">
+                                <rect key="frame" x="20" y="550" width="66" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="yPD-gw-IOJ"/>
+                                </constraints>
+                                <state key="normal" title="Count Up"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpC-4B-BcZ">
+                                <rect key="frame" x="94" y="554" width="486" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="qpC-4B-BcZ" firstAttribute="trailing" secondItem="OBN-s3-1vd" secondAttribute="trailingMargin" id="1xM-eJ-MDj"/>
                             <constraint firstItem="2VM-av-Gbt" firstAttribute="centerY" secondItem="OBN-s3-1vd" secondAttribute="centerY" id="4Bn-t5-SIo"/>
+                            <constraint firstItem="bvQ-Fy-EJ3" firstAttribute="top" secondItem="qpC-4B-BcZ" secondAttribute="bottom" constant="25" id="9WG-x5-jUY"/>
                             <constraint firstItem="K2V-gw-kid" firstAttribute="top" secondItem="ldU-Ik-TmW" secondAttribute="bottom" constant="8" id="AfN-Bh-xo5"/>
                             <constraint firstItem="ldU-Ik-TmW" firstAttribute="top" secondItem="OXh-yw-YEW" secondAttribute="bottom" constant="8" id="CP1-sj-Vl0"/>
                             <constraint firstItem="OXh-yw-YEW" firstAttribute="centerX" secondItem="OBN-s3-1vd" secondAttribute="centerX" id="DWt-97-Egq"/>
@@ -83,13 +100,18 @@
                             <constraint firstItem="ldU-Ik-TmW" firstAttribute="centerX" secondItem="OBN-s3-1vd" secondAttribute="centerX" id="SIz-1d-zyS"/>
                             <constraint firstItem="arr-3L-RHx" firstAttribute="leading" secondItem="OBN-s3-1vd" secondAttribute="leadingMargin" id="aUj-5c-fgr"/>
                             <constraint firstItem="arr-3L-RHx" firstAttribute="trailing" secondItem="OBN-s3-1vd" secondAttribute="trailingMargin" id="bN8-oW-1ra"/>
+                            <constraint firstItem="bvQ-Fy-EJ3" firstAttribute="top" secondItem="oIv-vL-pbh" secondAttribute="bottom" constant="20" id="cZL-iO-bn8"/>
                             <constraint firstItem="arr-3L-RHx" firstAttribute="top" secondItem="mFF-Yd-DlN" secondAttribute="bottom" constant="8" id="f4t-nq-75k"/>
+                            <constraint firstItem="oIv-vL-pbh" firstAttribute="leading" secondItem="OBN-s3-1vd" secondAttribute="leadingMargin" id="iCG-XS-OpS"/>
                             <constraint firstItem="2VM-av-Gbt" firstAttribute="centerX" secondItem="OBN-s3-1vd" secondAttribute="centerX" id="roj-Fd-pWb"/>
+                            <constraint firstItem="qpC-4B-BcZ" firstAttribute="leading" secondItem="oIv-vL-pbh" secondAttribute="trailing" constant="8" id="zVJ-Ut-4oB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MGa-bs-OXZ"/>
                     <connections>
                         <outlet property="activityIndicator" destination="2VM-av-Gbt" id="vHe-z2-u9e"/>
+                        <outlet property="countLabel" destination="qpC-4B-BcZ" id="iGx-bo-Hdk"/>
+                        <outlet property="countUpButton" destination="oIv-vL-pbh" id="FnA-Pg-OdH"/>
                         <outlet property="loginButton" destination="K2V-gw-kid" id="rJ2-1m-yg7"/>
                         <outlet property="passwordTextField" destination="ldU-Ik-TmW" id="cyZ-pX-Gqa"/>
                         <outlet property="userNameTextField" destination="OXh-yw-YEW" id="zEf-Zn-bKa"/>
