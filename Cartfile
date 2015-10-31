@@ -1,1 +1,2 @@
 github "SwiftBond/Bond" ~> 4.0
+github "realm/realm-cocoa"

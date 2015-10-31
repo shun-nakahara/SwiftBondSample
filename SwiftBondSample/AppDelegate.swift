@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Appsee
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Appsee.start("23643918d33d45b5918a2f9db5809165")
         return true
     }
 

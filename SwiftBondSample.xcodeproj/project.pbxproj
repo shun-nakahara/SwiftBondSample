@@ -25,12 +25,18 @@
 		F76DB6F61BE39E02000E592E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB6F51BE39E02000E592E /* ComplicationController.swift */; };
 		F76DB6F81BE39E02000E592E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76DB6F71BE39E02000E592E /* Assets.xcassets */; };
 		F78A15FF1BE3AAB700DDD8C7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A15FE1BE3AAB700DDD8C7 /* LoginViewModel.swift */; };
-		F78A16091BE3B6E200DDD8C7 /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78A16081BE3B6E200DDD8C7 /* Bond.framework */; };
 		F78A160A1BE3B6E200DDD8C7 /* Bond.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F78A16081BE3B6E200DDD8C7 /* Bond.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F78A160D1BE3D45E00DDD8C7 /* ListTableviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A160C1BE3D45E00DDD8C7 /* ListTableviewController.swift */; };
 		F78A160F1BE3D7B100DDD8C7 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A160E1BE3D7B100DDD8C7 /* ListTableViewCell.swift */; };
 		F78A16111BE3DA4F00DDD8C7 /* ListTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A16101BE3DA4F00DDD8C7 /* ListTableViewCellModel.swift */; };
 		F78A16131BE3F20600DDD8C7 /* ListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A16121BE3F20600DDD8C7 /* ListTableViewModel.swift */; };
+		F78A161E1BE4961900DDD8C7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78A161D1BE4961900DDD8C7 /* AVFoundation.framework */; };
+		F78A16201BE4962200DDD8C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78A161F1BE4962200DDD8C7 /* CoreGraphics.framework */; };
+		F78A16221BE4962D00DDD8C7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78A16211BE4962D00DDD8C7 /* CoreMedia.framework */; };
+		F78A16241BE4963700DDD8C7 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78A16231BE4963700DDD8C7 /* CoreVideo.framework */; };
+		F78A16261BE4966200DDD8C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78A16251BE4966200DDD8C7 /* QuartzCore.framework */; };
+		F78A16281BE4966E00DDD8C7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78A16271BE4966E00DDD8C7 /* SystemConfiguration.framework */; };
+		F78A162A1BE4A6E100DDD8C7 /* Appsee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78A16291BE4A6E100DDD8C7 /* Appsee.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +139,13 @@
 		F78A160E1BE3D7B100DDD8C7 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		F78A16101BE3DA4F00DDD8C7 /* ListTableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCellModel.swift; sourceTree = "<group>"; };
 		F78A16121BE3F20600DDD8C7 /* ListTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewModel.swift; sourceTree = "<group>"; };
+		F78A161D1BE4961900DDD8C7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F78A161F1BE4962200DDD8C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F78A16211BE4962D00DDD8C7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F78A16231BE4963700DDD8C7 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		F78A16251BE4966200DDD8C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F78A16271BE4966E00DDD8C7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F78A16291BE4A6E100DDD8C7 /* Appsee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Appsee.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +153,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F78A16091BE3B6E200DDD8C7 /* Bond.framework in Frameworks */,
+				F78A162A1BE4A6E100DDD8C7 /* Appsee.framework in Frameworks */,
+				F78A16281BE4966E00DDD8C7 /* SystemConfiguration.framework in Frameworks */,
+				F78A16261BE4966200DDD8C7 /* QuartzCore.framework in Frameworks */,
+				F78A16241BE4963700DDD8C7 /* CoreVideo.framework in Frameworks */,
+				F78A16221BE4962D00DDD8C7 /* CoreMedia.framework in Frameworks */,
+				F78A16201BE4962200DDD8C7 /* CoreGraphics.framework in Frameworks */,
+				F78A161E1BE4961900DDD8C7 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +190,13 @@
 		F76DB6A61BE39E01000E592E = {
 			isa = PBXGroup;
 			children = (
+				F78A16291BE4A6E100DDD8C7 /* Appsee.framework */,
+				F78A16271BE4966E00DDD8C7 /* SystemConfiguration.framework */,
+				F78A16251BE4966200DDD8C7 /* QuartzCore.framework */,
+				F78A16231BE4963700DDD8C7 /* CoreVideo.framework */,
+				F78A16211BE4962D00DDD8C7 /* CoreMedia.framework */,
+				F78A161F1BE4962200DDD8C7 /* CoreGraphics.framework */,
+				F78A161D1BE4961900DDD8C7 /* AVFoundation.framework */,
 				F78A16081BE3B6E200DDD8C7 /* Bond.framework */,
 				F76DB6B11BE39E01000E592E /* SwiftBondSample */,
 				F76DB6C61BE39E01000E592E /* SwiftBondSampleTests */,
@@ -729,6 +755,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SwiftBondSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -744,6 +771,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SwiftBondSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

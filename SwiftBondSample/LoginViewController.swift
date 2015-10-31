@@ -8,6 +8,7 @@
 
 import UIKit
 import Bond
+import Appsee
 
 class LoginViewController: UIViewController {
     
@@ -27,6 +28,10 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+
+        Appsee.startScreen("Login Screen")
+        Appsee.markViewAsSensitive(self.view)
         
         loginModel.userName.bidirectionalBindTo(userNameTextField.bnd_text)
         loginModel.password.bidirectionalBindTo(passwordTextField.bnd_text)
@@ -74,7 +79,9 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
+    deinit {
+        Appsee.unmarkViewAsSensitive(self.view)
+    }
     
 }
 

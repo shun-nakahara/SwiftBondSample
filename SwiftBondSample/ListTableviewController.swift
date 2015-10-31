@@ -8,6 +8,7 @@
 
 import UIKit
 import Bond
+import Appsee
 
 class ListTableviewController: UITableViewController {
     
@@ -16,7 +17,10 @@ class ListTableviewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+
+        Appsee.startScreen("List Screen")
+        Appsee.markViewAsSensitive(self.view)
+
         // set refresh control
         let refreshControl: UIRefreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: Selector("reloadModelData:"), forControlEvents: UIControlEvents.ValueChanged)
@@ -63,5 +67,9 @@ class ListTableviewController: UITableViewController {
             refreshControl.endRefreshing()
         }
         
+    }
+    
+    deinit {
+        Appsee.unmarkViewAsSensitive(self.view)
     }
 }

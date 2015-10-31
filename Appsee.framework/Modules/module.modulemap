@@ -1,0 +1,6 @@
+framework module Appsee {
+  umbrella header "Appsee.h"
+
+  export *
+  module * { export * }
+}
